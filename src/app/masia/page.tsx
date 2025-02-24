@@ -46,15 +46,15 @@ export default function HomePage() {
             </section>
 
             <section className="flex justify-center pt-100">
-              <div className="flex justify-center w-full h-full py-100 animate-fade-up animate-duration-[2000ms] animate-delay-1000">            
-                {/*<Cellphone/>*/}
+              {/*<div className="flex justify-center w-full h-full py-100 animate-fade-up animate-duration-[2000ms] animate-delay-1000">            
+                
                 <Link href={`/template?videoId=${categories[0].example}&link=${encodeURIComponent(categories[0].link)}`}>
                 <Cellphone name={ categories[0].name }/>
                 </Link>
                 <Link href={`/template?videoId=${categories[1].example}&link=${encodeURIComponent(categories[1].link)}`}>
                 <Cellphone name={ categories[1].name} />
                 </Link>
-              </div>
+              </div>*/}
             </section>
         </>
     )
