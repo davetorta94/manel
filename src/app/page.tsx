@@ -14,9 +14,6 @@ import { Videos } from "@/components/videos";
 
 
 export default function Home() {
-
-  const [moused, setMoused] = useState(false);
-
   
 
 
