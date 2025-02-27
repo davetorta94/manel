@@ -4,10 +4,12 @@ import Button from "./button";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../container.module.css"
-import {Cellphone} from "../app/masia/cellphone";
+import {Cellphone} from "../components/cellphone";
 import { useState } from "react";
 import { categories } from "@/libs/data";
 import { Card } from "@/components/card";
+import { montserrat } from "@/fonts/fonts";
+import { Videos } from "@/components/videos";
 
 
 
@@ -35,18 +37,34 @@ export default function Home() {
                             height={400}
                             priority={true}
                             className="shadow-2xl shadow-gray-500/50 rounded-lg transition-all duration-500 
-                                       hover:shadow-gray-700/50 hover:scale-105 hover:opacity-90"
+                                       hover:shadow-gray-700/50 hover:scale-105 hover:opacity-50"
                           />
         
                          {/* Texto que aparece en hover */}
                          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white 
-                                         text-2xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg">
+                                         text-4xl font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg">
                            MBO MOTORSPORT
                          </div>
+
+                         {/*<div className="absolute inset-0 flex items-center justify-center text-white 
+                                         text-2xl font-bold rounded-lg top-50 opacity-0 hover:opacity-100 transition-opacity duration-500">
+                            <Image
+                                src="/mbo-motorsport.png"
+                                alt="logo para el header"
+                                width={500}
+                                height={200} />
+                         </div>*/}
+
                        </div>
                   </div>
                    
             </section>
+
+            {/* OJO */}
+
+            <section className="flex flex-row text-5xl justify-center items-center pt-24">
+                  <h2 className={`${montserrat.className}`}>CATEGORIAS</h2>
+              </section>
 
             {/* Tarjeta con Texto */}
 
@@ -55,6 +73,10 @@ export default function Home() {
                 <Card />
                
             </section>
+
+            {/* ULTIMOS VIDEOS */}
+
+            <Videos />
 
             {/* Enlaces a Categorias*/}
 
@@ -65,7 +87,7 @@ export default function Home() {
                   <Cellphone name={ categories[0].name }/>
                 </Link>
                 <Link href={`/template?videoId=${categories[1].example}&link=${encodeURIComponent(categories[1].link)}`}>
-                  <Cellphone name={ categories[1].name} />
+                  <Cellphone name={ categories[1].name}/>
                 </Link>
               </div>
             </section>

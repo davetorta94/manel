@@ -133,8 +133,10 @@ button.youtube-button:hover svg {
 }
 
 .card__description {
-  margin: 10px 0 0;
+  margin: 5px 0 0;
   font-size: 14px;
   color: #777;
   line-height: 1.4;
 };
+
+

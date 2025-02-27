@@ -1,8 +1,9 @@
 import Link from "next/link";
-import TemplatePage from "../template/page";
+import TemplatePage from "../app/template/page";
 
 interface cellphoneProps {
     name: string,
+    
 }
 
 export const Cellphone: React.FC<cellphoneProps> = ({name}) => {
