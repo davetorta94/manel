@@ -1,9 +1,8 @@
 "use client"
 
-import Button from "./button";
+
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../../container.module.css"
 import {Cellphone} from "../components/cellphone";
 import { useState } from "react";
 import { categories } from "@/libs/data";
