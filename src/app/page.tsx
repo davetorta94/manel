@@ -4,7 +4,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import {Cellphone} from "../components/cellphone";
-import { useState } from "react";
 import { categories } from "@/libs/data";
 import { Card } from "@/components/card";
 import { montserrat } from "@/fonts/fonts";
