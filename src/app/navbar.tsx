@@ -46,11 +46,11 @@ const Navbar = () => {
             
           </button>
 
-          <button className="p-2 bg-white text-black rounded-md">
+          {/*<button className="p-2 bg-white text-black rounded-md">
             <Link href='/masia'>
             MASIA
             </Link>
-          </button>
+          </button>*/}
         </div>
       </nav>
     </div>
