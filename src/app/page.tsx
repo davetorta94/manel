@@ -2,9 +2,7 @@
 
 
 import Image from "next/image";
-import Link from "next/link";
 import {Cellphone} from "../components/cellphone";
-import { categories } from "@/libs/data";
 import { Card } from "@/components/card";
 import { montserrat } from "@/fonts/fonts";
 import { Videos } from "@/components/videos";
