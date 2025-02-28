@@ -19,7 +19,7 @@ export const Cellphone = () => {
                     categories.map((category) => (
                 <div key={category.id}>
                 
-                <Link href={category.link}>
+                <Link href={`/template?videoId=${category.example}&link=${encodeURIComponent(category.link)}`}>
                 <div className="relative flex justify-center h-[300px] w-[160px] border border-4 border-black rounded-2xl bg-gray-50 hover:bg-red-400" style={{boxShadow: '5px 5px 2.5px 6px rgb(209, 218, 218)'}}>
                 <div className="relative-goup">
                 
