@@ -77,13 +77,8 @@ export default function Home() {
 
             <section className="flex justify-center pt-100">
               <div className="flex justify-center w-full h-full py-100 animate-fade-up animate-duration-[2000ms] animate-delay-1000">            
-                {/*<Cellphone/>*/}
-                <Link href={`/template?videoId=${categories[0].example}&link=${encodeURIComponent(categories[0].link)}`}>
-                  <Cellphone name={ categories[0].name }/>
-                </Link>
-                <Link href={`/template?videoId=${categories[1].example}&link=${encodeURIComponent(categories[1].link)}`}>
-                  <Cellphone name={ categories[1].name}/>
-                </Link>
+                <Cellphone/>
+                
               </div>
             </section>
         </>
@@ -104,3 +99,16 @@ export default function Home() {
 
 
 
+/*
+
+<Link href={`/template?videoId=${categories[0].example}&link=${encodeURIComponent(categories[0].link)}`}>
+                  <Cellphone name={ categories[0].name }/>
+                </Link>
+                <Link href={`/template?videoId=${categories[1].example}&link=${encodeURIComponent(categories[1].link)}`}>
+                  <Cellphone name={ categories[1].name}/>
+                </Link>
+                <Link href={`/template?videoId=${categories[2].example}&link=${encodeURIComponent(categories[2].link)}`}>
+                  <Cellphone name={ categories[2].name}/>
+                </Link>
+
+*/

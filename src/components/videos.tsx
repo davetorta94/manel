@@ -19,7 +19,7 @@ export const Videos = () => {
                 <div className="rounded-md"></div>
                 <h4 className="text-lg font-bold mt-2">{video.nombre}</h4>
                 <Link href={video.url} target="_blank">
-                  <Image src={video.thumb} width={400} height={100} alt="foto" className="rounded hover:opacity-80 hover:scale-105"/>
+                  <Image src={video.thumb} width={400} height={100} alt="foto" className="rounded-xl hover:opacity-80 hover:scale-105"/>
                 </Link>
               </div>
             ))}
