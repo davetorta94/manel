@@ -3,8 +3,8 @@
 export type Category = {
     id: number;
     name: string;
-    example_link: string;
-    list_link: string;
+    example: string;
+    link: string;
     
 }
 
@@ -18,6 +18,6 @@ export type Social = {
 export type Video = {
     id: number,
     name: string,
-    link: string,
+    url: string,
     thumb: string,
 }
