@@ -17,7 +17,7 @@ export const Videos = () => {
             {videos.map((video) => (
               <div key={video.id} className="bg-white p-4 shadow-md rounded-lg">
                 <div className="rounded-md"></div>
-                <h4 className="text-lg font-bold mt-2">{video.nombre}</h4>
+                <h4 className="text-lg font-bold mt-2">{video.name}</h4>
                 <Link href={video.url} target="_blank">
                   <Image src={video.thumb} width={400} height={100} alt="foto" className="rounded-xl hover:opacity-80 hover:scale-105"/>
                 </Link>
