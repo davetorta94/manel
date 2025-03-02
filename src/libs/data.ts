@@ -21,9 +21,7 @@ const categories: Category[] = [
 
 const videos: Video[] = [
     { id: 1, name: "Ruta 99 (parte 1)", url: "https://www.youtube.com/watch?v=x3c9vZb5lA0&t=1s", thumb: "/thumb-1.webp" },
-    { id: 2, name: "Corremos el Trial de Higueruela (Albacete) 2024", url: "https://www.youtube.com/watch?v=z2k0x2NGluM&t=8s", thumb: "/thumb-2.webp" },
-    
-
+    { id: 2, name: "El Trial de Higueruela", url: "https://www.youtube.com/watch?v=z2k0x2NGluM&t=8s", thumb: "/thumb-2.webp" },
   ];
 
 
