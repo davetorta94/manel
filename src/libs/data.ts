@@ -16,13 +16,7 @@ const categories: Category[] = [
         "link" : "https://www.youtube.com/playlist?list=PLYIkCBHIxkBf9RCUn-afN2GHMSgxDOgk0",
        
     },
-    {
-        "id": 3,
-        "name": "cachopo",
-        "example": "CMa1I6dn_UA",
-        "link" : "https://www.youtube.com/playlist?list=PLYIkCBHIxkBf9RCUn-afN2GHMSgxDOgk0",
-       
-    },
+    
 ]
 
 const videos: Video[] = [
