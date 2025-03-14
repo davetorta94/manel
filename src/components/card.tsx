@@ -33,12 +33,7 @@ export const Card = () => {
 
         <div className="card__content opacity-80">
           <p className="card__title">TRIAL</p>
-          <p className="card__description">Disfruto de mi pasión y la comparto por este canal.🛵💨
-                Comunicador y loco del motor, en mi canal te mostraré mis experiencias, aprendizajes, proyectos, viajes, curiosidades... Todo sobre las dos ruedas contado al detalle y sin filtros.🔥
-                ¿Me acompañas en esta aventura? 🌍🏍️
-                - Montesa 4RT
-                -Aprilia RS 125🐝
-                -Kawasaki ZX6R</p>
+          <p className="card__description"></p>
         </div>
     </motion.div>
 
@@ -58,12 +53,7 @@ export const Card = () => {
                                     />
         <div className="card__content opacity-80">
           <p className="card__title">EVENTOS</p>
-          <p className="card__description">Disfruto de mi pasión y la comparto por este canal.🛵💨
-                Comunicador y loco del motor, en mi canal te mostraré mis experiencias, aprendizajes, proyectos, viajes, curiosidades... Todo sobre las dos ruedas contado al detalle y sin filtros.🔥
-                ¿Me acompañas en esta aventura? 🌍🏍️
-                - Montesa 4RT
-                -Aprilia RS 125🐝
-                -Kawasaki ZX6R</p>
+          <p className="card__description"></p>
         </div>
     </motion.div>
 
