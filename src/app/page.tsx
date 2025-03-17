@@ -17,7 +17,7 @@ export default function Home() {
 
     return (
         <>
-              <div className="absolute">
+              <div className="absolute z-10">
                 <MenuButton  />
               </div>
              
@@ -30,8 +30,8 @@ export default function Home() {
                           <Image
                             src="/header-1.jpeg"
                             alt="portada mbo motorsport"
-                            width={1000}
-                            height={400}
+                            width={2000}
+                            height={800}
                             priority={true}
                             className="shadow-2xl shadow-gray-500/50 rounded-lg transition-all duration-500 
                             hover:shadow-gray-700/50 hover:scale-105 hover:opacity-50"
