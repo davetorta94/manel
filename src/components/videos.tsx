@@ -1,9 +1,16 @@
+import { GetStaticProps } from "next";
 import { videos } from "@/libs/data"
 import Link from "next/link"
 import Image from "next/image"
 import { MiniYoutbeButton } from "./mini-youtube-button"
+import { Video } from "@/libs/definitions";
 
-export const Videos = () => {
+type VideosPageProps = {
+  videos: Video[];
+};
+
+  const Videos = ({ videos = [] }: VideosPageProps) => {
+    console.log("Videos recibidos:", videos); // Agregar este console.log
   return (
     <>
       {
@@ -36,3 +43,12 @@ export const Videos = () => {
     </>
   )
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  return {
+    props: { videos: videos || [] }, // Asegura que no sea undefined
+    revalidate: 60,
+  };
+};
+
+export default Videos

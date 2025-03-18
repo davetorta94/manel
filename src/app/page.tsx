@@ -5,8 +5,9 @@ import Image from "next/image";
 import {Cellphone} from "../components/cellphone";
 import { Card } from "@/components/card";
 import { montserrat } from "@/fonts/fonts";
-import { Videos } from "@/components/videos";
 import { MenuButton } from "@/components/menu-button";
+import Videos from "@/components/videos";
+import { videos } from "@/libs/data";
 
 
 
@@ -64,7 +65,7 @@ export default function Home() {
 
             {/* ULTIMOS VIDEOS */}
 
-            <Videos />
+            <Videos videos={videos} />
 
             {/* Enlaces a Categorias*/}
 
