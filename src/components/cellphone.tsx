@@ -2,14 +2,10 @@ import Link from "next/link"
 import { categories } from "@/libs/data"
 
 
-//interface cellphoneProps {
-//    name: string,
-//    
-//}
-
 export const Cellphone = () => {
     return(
         <>
+        <div className="flex justify-center w-full h-full py-100 animate-fade-up animate-duration-[2000ms] animate-delay-1000">
         
         {
             categories.length === 0 ? (
@@ -41,8 +37,8 @@ export const Cellphone = () => {
                 
             )
         }
-       
-       
+
+        </div>
         </>
     )
 }
