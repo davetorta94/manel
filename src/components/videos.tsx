@@ -27,7 +27,7 @@ type VideosProps = {
 
                 
                   <Image src={video.thumb} width={400} height={250} alt="foto" className="rounded-xl w-full h-full object-cover hover:opacity-80 transition-transform"/>
-                    <Link href={video.url} target="_blank">
+                    <Link href={video.url} target="_blank" aria-label={`Ver video ${video.name}`}>
                       <MiniYoutbeButton/>
                     </Link>
                 

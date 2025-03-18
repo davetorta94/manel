@@ -12,7 +12,7 @@ const Navbar = () => {
           >
             
           <Link href='/'>
-            <Image src='/mbo-logo.png' width={100} height={60} alt="/" priority={true}/>
+            <Image src='/mbo-logo.png' width={100} height={60} alt="/" priority={true} aria-label="Ir a página de Inicio"/>
           </Link>
             
             
