@@ -26,7 +26,7 @@ export const Card = () => {
             alt="portada mbo motorsport"
             width={700}
             height={150}
-            priority={true}
+            
             className="shadow-2xl shadow-gray-500/50 rounded-lg transition-all duration-500 
             hover:shadow-gray-700/50 hover:scale-105 hover:opacity-90"
             />
@@ -47,7 +47,7 @@ export const Card = () => {
                                     alt="portada mbo motorsport"
                                     width={620}
                                     height={150}
-                                    priority={true}
+                                    
                                     className="shadow-2xl shadow-gray-500/50 rounded-lg transition-all duration-500 
                                     hover:shadow-gray-700/50 hover:scale-105 hover:opacity-90"
                                     />
