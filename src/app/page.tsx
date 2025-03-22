@@ -5,6 +5,7 @@ import { MenuButton } from "@/components/menu-button";
 import { Videos } from "@/components/videos";
 import { CoverImage } from "@/components/cover";
 import { videos } from "@/libs/data";
+import { SocialMedia } from "@/components/social-media";
 
 
 
@@ -46,6 +47,10 @@ export default function Home() {
             {/* ULTIMOS VIDEOS */}
 
                 <Videos videos={ videos } />
+
+                <section className="flex flex-col justify-around md:flex-row">
+                    <SocialMedia />
+                </section>
 
             {/* Enlaces a Categorias*/}
 

@@ -1,4 +1,4 @@
-import { Category, Video } from "./definitions";
+import { Card, Category, Video } from "./definitions";
 
 
 const categories: Category[] = [
@@ -27,4 +27,22 @@ const videos: Video[] = [
   ];
 
 
-export { categories, videos };
+  
+  const cards: Card[] = [
+    {
+      id: 1,
+      title: "TRIAL",
+      image: "/trial.png",
+      alt: "Imagen de Trial",
+    },
+    {
+      id: 2,
+      title: "EVENTOS",
+      image: "/racing-photo-particles.jpeg",
+      alt: "Imagen de eventos de motorsport",
+    },
+  ];
+
+
+
+    export { categories, videos, cards };

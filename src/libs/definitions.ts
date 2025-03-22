@@ -21,3 +21,10 @@ export type Video = {
     url: string,
     thumb: string,
 }
+
+export type Card = {
+    id: number,
+    title: string,
+    image: string,
+    alt: string,
+}

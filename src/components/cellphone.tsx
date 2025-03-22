@@ -5,7 +5,7 @@ import { categories } from "@/libs/data"
 export const Cellphone = () => {
     return(
         <>
-        <div className="flex justify-center w-full h-full py-100 animate-fade-up animate-duration-[2000ms] animate-delay-1000">
+        <div className="flex justify-center w-full h-full pt-100 mt-52 animate-fade-up animate-duration-[2000ms] animate-delay-1000">
         
         {
             categories.length === 0 ? (

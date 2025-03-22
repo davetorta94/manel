@@ -1,65 +1,36 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion";
-import { useRef } from "react";
-import { useInView } from "framer-motion";
 import Image from "next/image";
+import { motion } from "motion/react"; 
+import { cards } from "@/libs/data";
 
 
 
 export const Card = () => {
-
-  const ref = useRef(null);
-  const isInView = useInView(ref);
-
   return (
-    <>
-    
-    <motion.div className="card my-52"
-                ref={ref}
-                initial={{ opacity: 0, y: 50 }} 
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.8, ease: "easeOut" }}>
-
-        <Image
-            src="/trial.png"
-            alt="portada mbo motorsport"
+    <div className="flex flex-col md:flex-row justify-center gap-8 my-20">
+      {cards.map((card) => (
+        <motion.div
+          key={card.id}
+          className="relative overflow-hidden rounded-xl shadow-lg group hover:shadow-2xl transition-shadow duration-300"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: card.id * 0.2 }}
+        >
+          <Image
+            src={card.image}
+            alt={card.alt}
             width={700}
             height={150}
-            
-            className="shadow-2xl shadow-gray-500/50 rounded-lg transition-all duration-500 
-            hover:shadow-gray-700/50 hover:scale-105 hover:opacity-90"
-            />
+            className="rounded-xl object-cover w-full h-full group-hover:opacity-80 transition-opacity duration-300"
+          />
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 text-white text-2xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            {card.title}
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  );
+};
 
-        <div className="card__content opacity-80">
-          <p className="card__title">TRIAL</p>
-          <p className="card__description"></p>
-        </div>
-    </motion.div>
-
-    <motion.div className="card my-52"
-                ref={ref}
-                initial={{ opacity: 0, y: 50 }} 
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.8, ease: "easeOut" }}>
-        <Image
-                                    src="/racing-photo-particles.jpeg"
-                                    alt="portada mbo motorsport"
-                                    width={620}
-                                    height={150}
-                                    
-                                    className="shadow-2xl shadow-gray-500/50 rounded-lg transition-all duration-500 
-                                    hover:shadow-gray-700/50 hover:scale-105 hover:opacity-90"
-                                    />
-        <div className="card__content opacity-80">
-          <p className="card__title">EVENTOS</p>
-          <p className="card__description"></p>
-        </div>
-    </motion.div>
-
-  
-    
-    </>
-    
-  )
-}
